@@ -1,0 +1,24 @@
+body {
+  width: 960px;
+  margin: 0 auto;
+  font-family: sans-serif;
+  color: white;
+}
+.chess-blocks {
+  height: 12.5%;
+  width: 12.5%;
+}
+.board {
+  height: 400px;
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px auto;
+  border: 1px solid black;
+}
+
+.chess-blocks:nth-child(16n+1), .chess-blocks:nth-child(16n+3), .chess-blocks:nth-child(16n+5), .chess-blocks:nth-child(16n+7), .chess-blocks:nth-child(16n+10), .chess-blocks:nth-child(16n+12), .chess-blocks:nth-child(16n+14), .chess-blocks:nth-child(16n) {
+  background-color: black;
+  /* color: white; */
+  color: black;
+}

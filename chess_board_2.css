@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+.board {
+  width: 400px;
+  height: 400px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.square {
+  background-color: white;
+  flex-grow: 1;
+}
+
+.row {
+  flex-grow: 1;
+  display: flex;
+  justify-content: stretch;
+}
+
+.row:nth-child(odd) > .square:nth-child(odd) {
+  background-color: black;
+}
+
+.row:nth-child(even) > .square:nth-child(even) {
+  background-color: black;
+}
